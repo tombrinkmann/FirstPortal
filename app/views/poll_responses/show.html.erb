@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Candidate:</b>
+  <%= @poll_response.candidate %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @poll_response.gender %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @poll_response.age %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @poll_response.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_poll_response_path(@poll_response) %> |
+<%= link_to 'Back', poll_responses_path %>

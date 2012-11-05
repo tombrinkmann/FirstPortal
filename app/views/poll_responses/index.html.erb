@@ -1,0 +1,29 @@
+<h1>Listing poll_responses</h1>
+
+<table>
+  <tr>
+    <th>Candidate</th>
+    <th>Gender</th>
+    <th>Age</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @poll_responses.each do |poll_response| %>
+  <tr>
+    <td><%= poll_response.candidate %></td>
+    <td><%= poll_response.gender %></td>
+    <td><%= poll_response.age %></td>
+    <td><%= poll_response.location %></td>
+    <td><%= link_to 'Show', poll_response %></td>
+    <td><%= link_to 'Edit', edit_poll_response_path(poll_response) %></td>
+    <td><%= link_to 'Destroy', poll_response, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Poll response', new_poll_response_path %>
