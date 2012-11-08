@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :candidate %><br />
-    <%= f.text_field :candidate %>
+    <%= f.select :candidate, ["Romney","Obama","Other"] %>
   </div>
   <div class="field">
     <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+    <%= f.select :gender, ["Male", "Female"] %>
   </div>
   <div class="field">
     <%= f.label :age %><br />
@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :location %><br />
-    <%= f.text_field :location %>
+    <%= f.select :location, ["Salem Township"," Harlan Township", "Hamilton Township"] %>
   </div>
   <div class="actions">
     <%= f.submit %>
